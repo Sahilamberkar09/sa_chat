@@ -5,7 +5,6 @@ import MessageInput from "../components/MessageInput";
 import MessageSkeleton from "./skeletons/MessageSkeleton";
 import { useAuthStore } from "../store/useAuthStore";
 import { formatMessageTime } from "../lib/utils.js";
-import { ScrollIcon } from "lucide-react";
 
 const ChatContainer = () => {
   const {
