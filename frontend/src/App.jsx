@@ -10,6 +10,7 @@ import { useAuthStore } from "./store/useAuthStore";
 import { useThemeStore } from "./store/useThemeStore";
 import Loader from "./components/Loader";
 import { Toaster } from "react-hot-toast";
+import Notification from "./components/Notifications";
 
 const App = () => {
   const { authUser, checkAuth, isCheckingAuth, onlineUsers } = useAuthStore();
@@ -54,7 +55,7 @@ const App = () => {
           element={authUser ? <ProfilePage /> : <Navigate to="/login" />}
         />
       </Routes>
-
+      <Notification />
       <Toaster />
     </div>
   );
